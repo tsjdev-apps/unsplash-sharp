@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UnsplashSharpMaui.MainPage"
+             Padding="16">
+
+    <Grid RowDefinitions="Auto,*"
+          RowSpacing="12">
+        <VerticalStackLayout Spacing="8">
+            <Entry x:Name="SearchPhotoEntry"
+                   Placeholder="Search"
+                   Text="dogs" />
+            <Button Text="Search"
+                    Clicked="SearchButtonOnClicked" />
+        </VerticalStackLayout>
+        <CollectionView x:Name="SearchCollectionView"
+                        Grid.Row="1">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout VerticalItemSpacing="12"
+                                 HorizontalItemSpacing="12"
+                                 Orientation="Vertical">
+                    <GridItemsLayout.Span>
+                        <OnIdiom Desktop="4"
+                                 Tablet="4"
+                                 Default="2" />
+                    </GridItemsLayout.Span>
+                </GridItemsLayout>
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid RowDefinitions="Auto,Auto"
+                          RowSpacing="6">
+                        <Image Source="{Binding Urls.Thumbnail}"
+                               Aspect="AspectFill"
+                               WidthRequest="250"
+                               HeightRequest="250" />
+                        <Label Text="{Binding Id}"
+                               FontSize="Medium"
+                               HorizontalOptions="Center"
+                               Grid.Row="1" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+
+</ContentPage>
