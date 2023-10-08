@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\UnsplashSharp\UnsplashSharp.csproj" />
+  </ItemGroup>
+
 </Project>
