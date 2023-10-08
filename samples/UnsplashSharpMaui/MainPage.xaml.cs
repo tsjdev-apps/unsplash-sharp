@@ -1,24 +1,25 @@
-﻿namespace UnsplashSharpMaui
+﻿using UnsplashSharp;
+using UnsplashSharp.Models.Enums;
+using UnsplashSharp.Models;
+
+namespace UnsplashSharpMaui
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
+        private readonly IUnsplashService _unsplashService;
 
         public MainPage()
         {
             InitializeComponent();
+
+            _unsplashService
+                = new UnsplashService("UNSPLASHAPIKEY");
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void SearchButtonOnClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            List<Photo> photos = await _unsplashService.SearchPhotosAsync(SearchPhotoEntry.Text, perPage: 30, orientation: Orientation.Squarish);
+            SearchCollectionView.ItemsSource = photos;
         }
     }
 }
