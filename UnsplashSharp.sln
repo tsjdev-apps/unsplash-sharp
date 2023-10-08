@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_src", "01_src", "{B17E92
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnsplashSharp.UnitTests", "tests\UnsplashSharp.UnitTests\UnsplashSharp.UnitTests.csproj", "{06835BE1-1722-4DFB-BC22-1C9161FF7575}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_tests", "02_tests", "{885096F5-2926-4871-B4FC-0D9F3169F2F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EA6EBDFD-557D-4C82-88B0-9055F9E25809} = {B17E925C-B4EF-4C6E-B004-0F82394B5238}
+		{06835BE1-1722-4DFB-BC22-1C9161FF7575} = {885096F5-2926-4871-B4FC-0D9F3169F2F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0096AD08-BD1C-4462-8CD1-BD7D44A4D949}
