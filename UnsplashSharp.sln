@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnsplashSharp", "src\Unspla
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_src", "01_src", "{B17E925C-B4EF-4C6E-B004-0F82394B5238}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnsplashSharp.UnitTests", "tests\UnsplashSharp.UnitTests\UnsplashSharp.UnitTests.csproj", "{06835BE1-1722-4DFB-BC22-1C9161FF7575}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{EA6EBDFD-557D-4C82-88B0-9055F9E25809}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA6EBDFD-557D-4C82-88B0-9055F9E25809}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA6EBDFD-557D-4C82-88B0-9055F9E25809}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06835BE1-1722-4DFB-BC22-1C9161FF7575}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06835BE1-1722-4DFB-BC22-1C9161FF7575}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06835BE1-1722-4DFB-BC22-1C9161FF7575}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06835BE1-1722-4DFB-BC22-1C9161FF7575}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
