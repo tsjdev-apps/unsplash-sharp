@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnsplashSharp", "src\UnsplashSharp\UnsplashSharp.csproj", "{EA6EBDFD-557D-4C82-88B0-9055F9E25809}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnsplashSharp", "src\UnsplashSharp\UnsplashSharp.csproj", "{EA6EBDFD-557D-4C82-88B0-9055F9E25809}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_src", "01_src", "{B17E925C-B4EF-4C6E-B004-0F82394B5238}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA6EBDFD-557D-4C82-88B0-9055F9E25809} = {B17E925C-B4EF-4C6E-B004-0F82394B5238}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0096AD08-BD1C-4462-8CD1-BD7D44A4D949}
